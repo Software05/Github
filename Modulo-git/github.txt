@@ -1,7 +1,7 @@
 GITHUB
 
 ##CREAR REPOSITORIO##
-	git remote add origin https://github.com/bluuweb/tutorial-github.git
+	git remote add origin https://github.com/Software05/Github.git
 	git push -u origin master
 //Nos muestra en que repositorio estamos enlazados remotamente.
 		git remote -v
