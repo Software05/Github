@@ -1,0 +1,13 @@
+#Tags
+//Con los tags podemos hacer versiones de nuestro proyecto.
+
+// Crear un tags
+	git tag versionAlpha -m "versión alpha"
+// Listar tags
+	git tag
+// Borrar tags
+	git tag -d nombreTags
+// Hacer una versión en un commit anterior ej: f52f3da
+	git tag -a nombreTag f52f3da -m "version alpha"
+// Mostrar información del tag
+	git show nombreTag

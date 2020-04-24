@@ -1,0 +1,12 @@
+#Renombrar archivos
+// Cambiar nombre
+	git mv nombreOriginal.vue nombreNuevo.vue
+
+#Eliminar archivos
+// Cambiar nombre
+git rm nombreArchivo.vue
+
+#Ignorando Archivos
+arhivo.js // Ignora el archivo en cuestion
+*.js // Ignora todos los arhivos con extensión .js
+node_modules/ //Ignora toda la carpeta

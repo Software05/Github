@@ -1,0 +1,16 @@
+# Trucos
+// Muestra en una línea los commit realizados
+	git log --oneline
+// Muestra en una línea los commit realizados pero más elegante
+	git log --oneline --decorate --all --graph
+// Solo muestra los archivos modificados
+	git status -s
+
+//Diferencias entre -- y -
+
+--decorate hace referencia a una palabra
+-s hace referencia al comando o a varios comandos, -sa serían dos comandos diferentes
+
+// Vemos información de la rama maestra
+	git status -s -b
+	git status -sb //Hace lo mismo que el comando anterior

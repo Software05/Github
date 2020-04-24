@@ -1,0 +1,21 @@
+#Ramas o branch
+//Hasta el momento solo hemos trabajado en la rama "master" 
+//pero puede que necesitemos crear diferentes ramas para los seguimientos de git.
+
+// Crea una nueva rama
+	git branch nombreRama
+// Nos muestra en que rama estamos
+	git branch
+// Nos movemos a la nueva rama
+	git checkout nombreRama
+
+//Podemos unir la rama master con la nueva, para eso tenemos que 
+//estar en la master para ejecutar el siguiente comando:
+
+// Nos movemos a la nueva rama
+	git merge nombreRama
+// Eliminar una rama
+	git branch -d nombreRama
+
+//Atajos
+Podemos utilizar git checkout -b nuevaRama para crear la nuevaRama y viajar a ella.

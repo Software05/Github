@@ -1,0 +1,11 @@
+			Flujo trabajo git
+Working		staging	    local repo
+directory		  area
+
+git add
+	   ->		git commit
+				->	git push
+			
+				<-	fit fetch
+<-	git checkout
+<-	git merge

@@ -1,0 +1,14 @@
+# Creando alias globales
+//Los alias nos sirven para crear atajos de comandos, podemos guardar diferentes alias de forma global y quedarán guardados en la configuración de git.
+
+
+// Guardamos el alias "lg" que ejecutará todo lo que está entre comillas
+	git config --global alias.lg "log --oneline --decorate --all --graph"
+// Para ver el archivo config con los alias creados
+	git config --global -e
+// Modo lectura sin poder modificar
+	git config --global -l
+// Realiza el add . y commit más mensaje al mismo tiempo
+	git commit -am "más comandos agregados"
+// Para editar un commit, como por ej: el mensaje
+	git commit --amend

@@ -1,0 +1,9 @@
+Salir del modo edición "Vim"
+	Para salir del modo edición de la líneas de comando precionar :q, en caso de realizar algún cambio sin 		guardar escribir :qa
+	:q! también sirve para salir sin guardar
+
+Trucos de editor Vim
+	i para comenzar a editar
+	esc para salir del modo edición
+	wq para guardar y salir
+	q! salir sin guardar cambios

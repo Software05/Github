@@ -1,0 +1,22 @@
+# Viajes a través de los commit
+//Vamos a conocer como podemos movernos entre los diferentes commit que tengamos registrados, 
+//supongamos que tenemos los siguientes commit:
+
+//f82f457 (HEAD -> master) mas comandos agregados
+//f52f3da nuevos comandos en fundamentos.md
+//e4ab8af mi primer commit
+
+// Viajamos al commit en específico f52f3da
+	git reset --mixed f52f3da
+// Viajamos al commit en específico f52f3da y eliminamos los cambios futuros
+	git reset --hard f52f3da
+// Muestra todos los cambios incluso si borramos los commit
+	git reflog
+// Viajamos al commit en específico f52f3da y podemos restaurar los archivos
+	git reset --hard f52f3da
+
+//Si no hicimos un commit pero aún así queremos revertir los cambios en un 
+//archivo específico podríamos utilizar el siguiente comando:
+	git checkout -- nombreArchivo.conExtensión
+//Si deseamos destruir todos los cambios sin haber realizado un commit podemos utilizar:
+	git reset --hard

@@ -1,0 +1,17 @@
+GITHUB
+
+##CREAR REPOSITORIO##
+	git remote add origin https://github.com/bluuweb/tutorial-github.git
+	git push -u origin master
+//Nos muestra en que repositorio estamos enlazados remotamente.
+		git remote -v
+##Tags##
+	git push --tags
+##Push##
+	git push
+##Pull##
+	git pull
+##Fetch##
+	git fetch
+##Clonar repositorio##
+	git clone https://github.com/bluuweb/tutorial-github.git nombreCarpeta
