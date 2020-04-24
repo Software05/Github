@@ -1,0 +1,149 @@
+Algoritmo ESTUDIANTES_hobby
+	//2. se tiene para el control de estudiantes de un colegio con una cantidad desconocida
+	//nombre, peso, estatura, edad, sexo (1 mujer, 2 hombre), hobby (1: baile, 2: futbol, 3: canto, 4: piano, 5: natacion)
+	//se desea saber
+	//- total de hombres y mujeres por hobby
+    //- hobby con mas mujeres
+	//- hobby con menos hombres
+	//- promedio de peso de los de natacion
+	//- promedio de estatura de futbol
+	//- hobby con mas personas
+	
+	ctnatacion=0
+	apeso=0
+	ctfutbol=0
+	aestatura=0
+	cbaile=0
+	cfutbol=0
+	ccanto=0
+	cpiano=0
+	cnatacion=0
+	cmujerB=0
+	ChombreB=0
+	cmujerF=0
+	chombreF=0
+	cmujerC=0
+	chombreC=0
+	cmujerP=0
+	chombreP=0
+	cmujerN=0
+	chombreN=0
+	
+	mostrar " desea ingresar estudiantes 1 (SI) / 2 (NO)"
+	LEER RESPUESTA
+	
+	MIENTRAS RESPUESTA=1
+		MOSTRAR "NOMBRE ESTUDIANTE"
+		leer nombre_estudiante
+		mostrar " peso"
+		leer peso
+		mostrar "estatura"
+		leer estatura
+		mostrar "edad"
+		leer edad
+		mostrar "sexo (1 mujer / 2 hombre)"
+		leer sexo
+		mostrar "hobby ( 1 baile, 2 futbol, 3 canto, 4 piano, 5 natacion)"
+		leer hobby
+		segun hobby
+			1: 
+				cbaile=cbaile+1
+				si sexo=1
+					cmujerB=cmujerB+1
+				SiNo
+					chombreB=chombreB+1
+				FinSi
+				
+			2:
+				cfutbol=cfutbol+1
+				si sexo=1
+					cmujerF=cmujerF+1
+				SiNo
+					chombreF=chombreF+1
+				FinSi
+			3:
+				ccanto=ccanto+1
+				si sexo=1
+					cmujerC=cmujerC+1
+				SiNo
+					chombreC=chombreC+1
+				FinSi
+			4:
+				cpiano=cpiano+1
+				si sexo=1
+					cmujerP=cmujerP+1
+				sino
+					chombreP=chombreP+1
+				FinSi
+			5:
+				cnatacion=cnatacion+1
+				si sexo=1
+					cmujerN=cmujerN+1
+				SINO
+					chombreN=chombreN+1
+				FinSi
+		FinSegun
+		si hobby=5
+			ctnatacion=ctnatacion+1
+			apeso=apeso+peso
+		FinSi
+		si hobby=2
+			ctfutbol=ctfutbol+1
+			aestatura=aestatura+estatura
+		FinSi
+		
+		si hobby != null
+			count=+1
+		FinSi
+		
+		mostrar " desea ingresar estudiantes 1 (SI) / 2 (NO)"
+		LEER RESPUESTA
+		
+	FinMientras
+	
+	si ctnatacion<>0
+		promnatacion=apeso/ctnatacion
+	FinSi
+	si ctfutbol<>0
+		promestfutbol=aestatura/ctfutbol
+	FinSi
+	
+	
+	Mostrar "Hobby con mas personas " count
+	
+	Mostrar " total de mujeres de baile son " cmujerB
+	
+	Mostrar " total de hombres de baile son " chombreB
+	
+	Mostrar " total de mujeres de futbol son " cmujerF
+	
+	Mostrar " total de hombres de futbol son " chombreF
+	
+	mostrar " total de mujeres de canto son " cmujerC
+	
+	mostrar " total de hombres de canto son " chombreC
+	
+	mostrar " total de mujeres de piano son " cmujerP
+	
+	mostrar " total de hombres de piano son " chombreP
+	
+	mostrar " total de mujeres de natacion son " cmujerN
+	
+	mostrar " total de hombres de natacion son " chombreN
+	
+	Mostrar " total de estudiantes de baile son " cbaile
+	
+	Mostrar " total de estudiantes de futbol son " cfutbol
+	
+	mostrar " total de estudiantes de canto son " ccanto
+	
+	mostrar " total de estudiantes de piano son " cpiano
+	
+	mostrar " total de estudiantes de natacion son " ctnatacion
+	
+	mostrar "promedio de peso de los de natacion es " promnatacion
+	mostrar "promedio de estatura de los de futbol es " promestfutbol
+	
+	
+	
+FinAlgoritmo
