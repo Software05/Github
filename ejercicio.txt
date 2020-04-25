@@ -2,12 +2,12 @@ Algoritmo ESTUDIANTES_hobby
 	//2. se tiene para el control de estudiantes de un colegio con una cantidad desconocida
 	//nombre, peso, estatura, edad, sexo (1 mujer, 2 hombre), hobby (1: baile, 2: futbol, 3: canto, 4: piano, 5: natacion)
 	//se desea saber
-	//- total de hombres y mujeres por hobby
-    //- hobby con mas mujeres
-	//- hobby con menos hombres
-	//- promedio de peso de los de natacion
-	//- promedio de estatura de futbol
-	//- hobby con mas personas
+	// total de hombres y mujeres por hobby
+    	// hobby con mas mujeres
+	//hobby con menos hombres
+	//promedio de peso de los de natacion
+	//promedio de estatura de futbol
+	// hobby con mas personas
 	
 	ctnatacion=0
 	apeso=0
