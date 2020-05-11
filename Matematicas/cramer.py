@@ -1,22 +1,25 @@
 import numpy as np
 
 #Datos primer ecuación
-numx = float(input('x: '))
-numy = float(input('y: '))
-numz = float(input('z: '))
-numt = float(input('t: '))
+print('Ecuacion 1')
+numx = float(input('X: '))
+numy = float(input('Y: '))
+numz = float(input('Z: '))
+numt = float(input('T.I: '))
 
 #Datos segunda ecuación
-numxu = float(input('x1: '))
-numyu = float(input('y1: '))
-numzu = float(input('z1: '))
-numtu = float(input('t1: '))
+print('Ecuacion 2')
+numxu = float(input('X: '))
+numyu = float(input('Y: '))
+numzu = float(input('Z: '))
+numtu = float(input('T.I: '))
 
 #Datos tercera ecuación
-numxd = float(input('x2: '))
-numyd = float(input('y2: '))
-numzd = float(input('z2: '))
-numtd = float(input('t2: '))
+print('Ecuacion 3')
+numxd = float(input('X: '))
+numyd = float(input('Y: '))
+numzd = float(input('Z: '))
+numtd = float(input('T.I: '))
 
 #Matriz del Sistema
 s = np.array([[numx, numy, numz], [numxu, numyu, numzu], [numxd, numyd, numzd]])
