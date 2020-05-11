@@ -1,0 +1,23 @@
+git config --global user.name "name"
+
+git config --global user.email "email"
+
+ls -a | grep .ssh
+
+mkdir .ssh
+
+ls -a | grep .ssh
+
+cd .ssh
+
+ssh-keygen -t rsa -b 4096 -C "soft.developer05@gmail.com"
+
+eval "$(ssh-agent -s)"
+
+ssh-add ~/.ssh/id_rsa
+
+cat ~/.ssh/id_rsa.pub
+
+git clone git@github.com:Software05/Github.git
+
+git pull
