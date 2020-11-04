@@ -1,0 +1,5 @@
+##Para actualizar repositorios se utiliza el comando
+apt update
+
+##Para actualizar paquetes se utiliza el comando
+apt upgrade
